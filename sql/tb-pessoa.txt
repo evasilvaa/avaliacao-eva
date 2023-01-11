@@ -1,0 +1,12 @@
+Pessoa 
+
+CREATE TABLE pessoa_eva (
+		pessoa_id INT NOT NULL AUTO_INCREMENT,
+		nome VARCHAR(200) NOT NULL,
+		cpf VARCHAR(25) NOT NULL,
+		idade Date NOT NULL,
+		sexo Char(1) NOT NULL,
+		PRIMARY KEY(pessoa_id)
+	);
+    
+    select *from pessoa_eva;
