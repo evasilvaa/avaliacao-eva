@@ -1,0 +1,18 @@
+Inner Join para juntar tabelas.
+
+select
+	pessoa_eva.pessoa_id,
+	pessoa_eva.nome,
+	pessoa_eva.cpf,
+	pessoa_eva.idade,
+	pessoa_eva.sexo,
+	endereco_eva.tipo,
+	endereco_eva.logradouro,
+	endereco_eva.numero,
+	endereco_eva.complemento,
+	endereco_eva.cep,
+	endereco_eva.cidade,
+	endereco_eva.estado 
+from
+pessoa_eva
+	inner join endereco_eva on pessoa_eva.pessoa_id = endereco_eva.pessoa_id;
